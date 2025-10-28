@@ -1,0 +1,128 @@
+.section {
+  min-height: 100vh;
+}
+
+.history-container {
+  margin: 100px 0 100px 0;
+}
+
+.history-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.history-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.history-left {
+  text-align: center;
+}
+
+.company-logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.position-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* font-style: italic; */
+  margin-bottom: 10px;
+}
+
+.position-description {
+  font-size: 1rem;
+}
+
+.history-date {
+  font-size: 1rem;
+  color: #a5a5a5;
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: bold;
+  color: #1edda0;
+}
+
+.service-icon {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.service-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.position-tag {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.position-tag-item {
+  background-color: #1edda0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.history-tag {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  color: #1edda0;
+}
+
+.mobile-logo {
+  display: none;
+}
+.desktop-logo {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo-container span,
+  .position-description,
+  .position-description,
+  .history-left {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .desktop-logo {
+    display: none;
+  }
+  .history-date {
+    font-size: 0.5rem;
+  }
+  .position-title {
+    font-size: 14px;
+  }
+  .history-tag {
+    font-size: 0.5rem;
+  }
+  .company-logo {
+    width: 50px;
+  }
+}
