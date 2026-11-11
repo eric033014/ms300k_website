@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react';
 import Home from './components/Home';
 import History from './components/History';
 import Service from './components/Service';
+import AIService from './components/AIService';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -31,11 +32,13 @@ function Footer() {
 
 function App() {
   const homeRef = useRef(null);
+  const aiRef = useRef(null);
   const serviceRef = useRef(null);
   const historyRef = useRef(null);
   useEffect(() => {
     const sections = [
       { ref: homeRef, id: 'home' },
+      { ref: aiRef, id: 'ai' },
       { ref: serviceRef, id: 'service' },
       { ref: historyRef, id: 'history' },
     ];
@@ -81,12 +84,17 @@ function App() {
       <Navigation
         scrollToSection={scrollToSection}
         homeRef={homeRef}
+        aiRef={aiRef}
         serviceRef={serviceRef}
         historyRef={historyRef}
       />
 
       <div ref={homeRef} style={{ minHeight: '100vh' }}>
         <Home />
+      </div>
+
+      <div ref={aiRef} style={{ minHeight: '100vh' }}>
+        <AIService />
       </div>
 
       <div ref={serviceRef} style={{ minHeight: '100vh' }}>

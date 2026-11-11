@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import logo from '../assets/images/k-logo.svg';
 import textLogo from '../assets/images/landing-logo.svg';
-function Navigation({ scrollToSection, homeRef, serviceRef, historyRef }) {
+function Navigation({ scrollToSection, homeRef, aiRef, serviceRef, historyRef }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -83,6 +83,18 @@ function Navigation({ scrollToSection, homeRef, serviceRef, historyRef }) {
           }}
         >
           首頁
+        </button>
+        <button
+          onClick={() => scrollToSection(aiRef)}
+          style={{
+            color: '#1edda0',
+            border: 'none',
+            background: 'none',
+            cursor: 'pointer',
+            outline: 'none',
+          }}
+        >
+          AI 導入
         </button>
         <button
           onClick={() => scrollToSection(serviceRef)}
