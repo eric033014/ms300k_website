@@ -3,6 +3,7 @@ import Home from './components/Home';
 import History from './components/History';
 import Service from './components/Service';
 import AIService from './components/AIService';
+import Cases from './components/Cases';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -33,12 +34,14 @@ function Footer() {
 function App() {
   const homeRef = useRef(null);
   const aiRef = useRef(null);
+  const casesRef = useRef(null);
   const serviceRef = useRef(null);
   const historyRef = useRef(null);
   useEffect(() => {
     const sections = [
       { ref: homeRef, id: 'home' },
       { ref: aiRef, id: 'ai' },
+      { ref: casesRef, id: 'cases' },
       { ref: serviceRef, id: 'service' },
       { ref: historyRef, id: 'history' },
     ];
@@ -85,6 +88,7 @@ function App() {
         scrollToSection={scrollToSection}
         homeRef={homeRef}
         aiRef={aiRef}
+        casesRef={casesRef}
         serviceRef={serviceRef}
         historyRef={historyRef}
       />
@@ -95,6 +99,10 @@ function App() {
 
       <div ref={aiRef} style={{ minHeight: '100vh' }}>
         <AIService />
+      </div>
+
+      <div ref={casesRef} style={{ minHeight: '100vh' }}>
+        <Cases />
       </div>
 
       <div ref={serviceRef} style={{ minHeight: '100vh' }}>
