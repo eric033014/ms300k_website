@@ -39,14 +39,7 @@ const valueItems = [
 
 const AIService = () => {
   return (
-    <div
-      className="section"
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        backgroundColor: '#F5FCF9',
-      }}
-    >
+    <div className="section" style={{ display: 'flex', alignItems: 'center' }}>
       <div className="service-container" style={{ width: '100%' }}>
         <div style={{ textAlign: 'center', marginBottom: '40px', padding: '0 20px' }}>
           <h2 style={{ fontWeight: 'bold' }}>企業 AI 導入</h2>
