@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import logo from '../assets/images/k-logo.svg';
 import textLogo from '../assets/images/landing-logo.svg';
-function Navigation({ scrollToSection, homeRef, aiRef, casesRef, serviceRef, historyRef }) {
+function Navigation({ scrollToSection, homeRef, aiRef, casesRef, serviceRef, faqRef, historyRef }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -119,6 +119,18 @@ function Navigation({ scrollToSection, homeRef, aiRef, casesRef, serviceRef, his
           }}
         >
           服務
+        </button>
+        <button
+          onClick={() => scrollToSection(faqRef)}
+          style={{
+            color: '#1edda0',
+            border: 'none',
+            background: 'none',
+            cursor: 'pointer',
+            outline: 'none',
+          }}
+        >
+          FAQ
         </button>
         <button
           onClick={() => scrollToSection(historyRef)}

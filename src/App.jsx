@@ -4,6 +4,7 @@ import History from './components/History';
 import Service from './components/Service';
 import AIService from './components/AIService';
 import Cases from './components/Cases';
+import Faq from './components/Faq';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -36,6 +37,7 @@ function App() {
   const aiRef = useRef(null);
   const casesRef = useRef(null);
   const serviceRef = useRef(null);
+  const faqRef = useRef(null);
   const historyRef = useRef(null);
   useEffect(() => {
     const sections = [
@@ -43,6 +45,7 @@ function App() {
       { ref: aiRef, id: 'ai' },
       { ref: casesRef, id: 'cases' },
       { ref: serviceRef, id: 'service' },
+      { ref: faqRef, id: 'faq' },
       { ref: historyRef, id: 'history' },
     ];
 
@@ -90,6 +93,7 @@ function App() {
         aiRef={aiRef}
         casesRef={casesRef}
         serviceRef={serviceRef}
+        faqRef={faqRef}
         historyRef={historyRef}
       />
 
@@ -107,6 +111,10 @@ function App() {
 
       <div ref={serviceRef} style={{ minHeight: '100vh' }}>
         <Service />
+      </div>
+
+      <div ref={faqRef} style={{ minHeight: '100vh' }}>
+        <Faq />
       </div>
 
       <div ref={historyRef} style={{ minHeight: '100vh' }}>

@@ -80,6 +80,18 @@
       ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "自己用 AI 工具（ChatGPT、n8n、Make）兜一套，跟找你們做有什麼差別？", "acceptedAnswer": {"@type": "Answer", "text": "自建的是會動的 demo，我們交付的是能長期營運的系統，差別不在 AI 而在工程：穩定性（失敗重試、自動告警、斷線自癒）、判斷力設計（哪些該讓 AI 做、哪些必須人工把關）、整合深度（直接串接既有 ERP、POS 與內部系統）、資安（地端模型加資料去敏，機密不出內網）。需求簡單到現成工具能搞定的，我們會直接說不用花這筆錢。"}},
+        {"@type": "Question", "name": "導入 AI 之後，公司的資料和程式碼會不會外流？", "acceptedAnswer": {"@type": "Answer", "text": "不會。機密要求高的案子採地端自建模型：敏感內容與原始碼留在內網處理、不外送第三方；需要外部算力的部分先經去敏處理才送出，全程留稽核紀錄。"}},
+        {"@type": "Question", "name": "導入 AI 需要換掉現有系統嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。我們串接既有的工具與流程（版本控制、工單系統、測試流程、POS 等），把 AI 接進去而不是砍掉重練。"}},
+        {"@type": "Question", "name": "怎麼收費？", "acceptedAnswer": {"@type": "Answer", "text": "依需求範圍報價。小型自動化依件計價；企業平台類採分階段里程碑計價，每階段可獨立驗收。訪談釐清需求後提供估價。"}}
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
