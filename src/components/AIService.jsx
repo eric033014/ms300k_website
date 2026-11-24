@@ -103,7 +103,7 @@ const AIService = () => {
             </div>
           ))}
         </div>
-        <div style={{ textAlign: 'center', marginTop: '40px' }}>
+        <div style={{ textAlign: 'center', marginTop: '40px', display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a
             href="https://links.code-tw.com/#contact"
             target="_blank"
@@ -120,6 +120,24 @@ const AIService = () => {
             }}
           >
             聊聊你的需求
+          </a>
+          <a
+            href="/ms300k-ai-onepager.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              backgroundColor: '#fff',
+              color: '#14b586',
+              fontWeight: 'bold',
+              fontSize: '18px',
+              padding: '12px 36px',
+              borderRadius: '999px',
+              textDecoration: 'none',
+              border: '2px solid #1edda0',
+            }}
+          >
+            下載一頁式介紹 PDF
           </a>
         </div>
       </div>
